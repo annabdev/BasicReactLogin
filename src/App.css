@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-body {padding:15px;
+body {
+  align-content: center;
+  padding:15px;
   background: grey}
   
   

@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+// import Routing from './src/Routing';
 
-
-
-class Login extends Component {
-    render() {
-        return (
-            React.createElement('form', {className: 'Username'},
-                React.createElement('input', {
-                    type: 'text',
-                    placeholder: 'Username (required)', 
-                }),
-                <br />,
-            React.createElement('form', {className: 'Password'},  
-                React.createElement('input', {
-                    type: 'text',
-                    placeholder: 'Password (required)'
-                }),
-                React.createElement('button', {type: 'Login'}, "Login"),       
-               
-            )) )}
-};
+            class Login extends Component {
+                render() {
+                  return (
+                    <div>
+                      <h2>Login</h2>
+                      <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
     
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control-sm" id="exampleInputPassword1" placeholder="Password"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                      <Link to="/Register">Register</Link>
+                      
+                    </div>
+                  )
+                  }}
+              
 export default Login;
+
+//                
