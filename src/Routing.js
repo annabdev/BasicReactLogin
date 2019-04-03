@@ -6,13 +6,14 @@ import Register from './components/Register';
 
 function Routing() {
     return (
-       
+
         <Router>
             <Switch>
                 <Route exact path="/" component={Login} />
                 <Route path="/Register" component={Register} />
             </Switch>
         </Router>
-    )}
+    )
+}
 
-    export default Routing;
+export default Routing;

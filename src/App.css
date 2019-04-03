@@ -6,13 +6,17 @@ body {
   padding:15px;
   background: grey}
   
-  
+  h2 {
+    color: lavenderblush;
+  }
   form input {
     background:pink;
     border: 1px solid black;
   }
   
-  
+  Link {
+    color: pink;
+  }
   button {
     background:lightgrey;
     color: orchid  
