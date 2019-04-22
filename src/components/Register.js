@@ -15,8 +15,18 @@ class Register extends Component {
     handleSubmit(event) {
   console.log('Full Name' + this.state.name,'email: ' +this.state.email,'password: '+this.state.password,'confirm; '+this.state.confirm);
   event.preventDefault();
-    }
-
+  let dumb=this.state;
+debugger
+fetch('http://localhost:5000/', {
+  method: 'POST',
+  body: JSON.stringify(this.state),
+  headers: {
+    'Content-Type': 'application.json'
+    
+  }
+}
+)
+  }
   render() {
     return (
       <div>
@@ -55,4 +65,3 @@ class Register extends Component {
 
 export default Register;
 
-//   

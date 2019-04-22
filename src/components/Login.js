@@ -10,9 +10,35 @@ class Login extends Component {
   this.handleSubmit = this.handleSubmit.bind(this);
   
   }
+
+ 
+
   handleSubmit(event) {
 console.log('email: ' + this.state.email,'password: ' +this.state.password);
-event.preventDefault();
+event.preventDefault()
+
+
+const App = async props => {
+  const res = await fetch('http://localhost:3000')
+  const data = await res.json()
+
+  return (
+    <h1>Hello {data}</h1>
+  )
+}
+
+module.exports = App
+let dumb=this.state;
+debugger
+fetch('http://localhost:5000/', {
+  method: 'POST',
+  body: JSON.stringify(dumb),
+  headers: {
+    'Content-Type': 'application.json'
+    
+  }
+}
+)
   }
 
   render() {
