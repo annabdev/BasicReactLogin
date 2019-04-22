@@ -13,7 +13,7 @@ class Register extends Component {
   }
     
     handleSubmit(event) {
-  console.log('Full Name' + this.state.name,'email: ' +this.state.email,'password: '+this.state.password,'confirm; '+this.state.confirm);
+  console.log('Full Name: ' + this.state.name,'email: ' +this.state.email,'password: '+this.state.password,'confirm; '+this.state.confirm);
   event.preventDefault();
   let dumb=this.state;
 debugger
